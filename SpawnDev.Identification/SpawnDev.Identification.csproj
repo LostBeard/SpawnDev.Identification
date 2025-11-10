@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Version>0.0.1-prerelease.0</Version>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<EmbedAllSources>true</EmbedAllSources>
+		<DebugType>Embedded</DebugType>
+		<Title>SpawnDev.Identification</Title>
+		<Authors>LostBeard</Authors>
+		<Description>Identity verification using ECDSA signatures for browser and non-browser platforms.</Description>
+		<PackageProjectUrl>https://github.com/LostBeard/SpawnDev.Identification</PackageProjectUrl>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+		<PackageIcon>icon-128.png</PackageIcon>
+		<RepositoryUrl>https://github.com/LostBeard/SpawnDev.Identification.git</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageTags>Blazor;BlazorWebAssembly;SimplePeer;WebRTC</PackageTags>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="Assets\icon-128.png" Pack="true" PackagePath="\" />
+		<None Include="..\README.md" Pack="true" PackagePath="\" />
+		<None Include="..\LICENSE.txt" Pack="true" PackagePath="\" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="SpawnDev.BlazorJS.Cryptography" Version="2.3.0" />
+		<PackageReference Include="MessagePack" Version="3.1.4" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<SupportedPlatform Include="browser" />
+	</ItemGroup>
+
+</Project>
+
