@@ -409,7 +409,7 @@ namespace SpawnDev.Identification
                 using var signerKey = await PublicKeyECDSAFromHex(sig.PublicKey);
                 var tokenToVerify = sig.Token;
                 var hashName = sig.HashName;
-                sig.Token = "";
+                sig.Token = default!;
                 signedObject.Signatures.Add(sig);
                 // verify the token
                 var serializedData = Serialize(signedObject);
