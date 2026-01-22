@@ -28,7 +28,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="SpawnDev.BlazorJS.Cryptography" Version="2.4.0" />
+		<PackageReference Include="SpawnDev.BlazorJS.Cryptography" Version="2.6.0" />
 		<PackageReference Include="MessagePack" Version="3.1.4" />
 	</ItemGroup>
 
